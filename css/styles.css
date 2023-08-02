@@ -136,6 +136,14 @@ p {
     text-decoration: line-through;
 }
 
+.list-item input {
+    transform: scale(1.5);
+}
+
+.checkbox {
+    transform: scale(1.5);
+}
+
 footer {
     background-color: black;
     color: white;
