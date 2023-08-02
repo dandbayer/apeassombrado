@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(63, 0, 63);
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    margin: 10px 0 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    background-color: #dc143c;
+}
+
+delete-button:hover {
+    cursor: pointer;
+    background-color: #e2254b;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#fantasma {
+    max-width: 30%;
+    margin: 2em 0 0.75em 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: 'Handjet', sans-serif;
+    text-align: center;
+    color: white;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 1em;
+    color: white;
+}
+
+.lista-form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.lista-input {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 1rem;
+    width: 65%;
+}
+
+.add-button {
+    background-color: #00997d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 15px 15px;
+    font-size: 1.2rem;
+    margin-left: 0.5em;
+}
+
+.add-button:hover {
+    background-color: #00c4a0;
+}
+
+.lista-items, .lista-fixa {
+    width: 90%;
+}
+
+.item, .item-fixo {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.4rem;
+    margin: 0.5em;
+    border-radius: 7px;
+}
+
+.delete-button {
+    float: right;
+    background-color: #dc143c;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20%;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.checked { 
+    text-decoration: line-through;
+}
+
+.lista-fixa input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+/* Estilos do Glossário*/
+
+.glos-body {
+    background-color: white;
+    color: black;
+    margin-top: 3em;
+}
+
+.glos-title, .glos-subtitle {
+    color: black;
+}
+
+.glos-title {
+    font-size: 6em;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.glos-list {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0 0.75em 1em 0.75em;
+}
+
+#lista-glossario {
+    margin-top: 1em;
+}
+
+#glos-nav a {
+    background-color: black;
+    color: white;
+}
+
+#glos-nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-dlm, .btn-top {
+    background-color: black;
+    outline: none;
+    color: white;
+    padding: 0.7em;
+    border: 2px solid white;
+    border-radius: 100%;
+    align-self: flex-end;
+    margin: 0 1em 1em 0;
+    cursor: pointer;
+}
+
+.btn-top, .arrow {
+    align-self: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer a, li a {
+    color: #e40684;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 10em;
+    }
+    .lista-items, .lista-fixa {
+        width: 60%;
+    }
+    .lista-form {
+        width: 80%;
+    }
+    .btn-dlm {
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+    .btn-dlm { 
+        position: fixed;
+        margin-right: 2em;
+    }
+}
